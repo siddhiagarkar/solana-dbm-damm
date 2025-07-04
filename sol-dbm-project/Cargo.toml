@@ -1,0 +1,15 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "sol-dbm-project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+solana-program = "1.16.0"
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+spl-associated-token-account = "1.1.0"
+
+[lib]
+name = "sol_dbm_project"
+crate-type = ["cdylib", "lib"]
